@@ -1,0 +1,44 @@
+mat-list.list-horizontal,
+ul.list-horizontal {
+  padding: 0;
+  .mat-list-item,
+  li {
+    display: inline-block;
+    height: auto;
+    width: auto;
+  }
+  ::ng-deep .mat-list-item-content {
+    padding-right: 0px;
+  }
+}
+
+.page-button{
+
+  button,
+  a {
+    border: 2px solid #001f54;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 42px;
+    height: 36.5px;
+
+    font-weight: bold;
+    font-size: 12px;
+    //line-height: 19px;
+    text-align: center;
+  }
+
+  a:not(.selected) {
+    background: white !important;
+    color: #001f54 !important ;
+  }
+
+  .paginator-label {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #001f54;
+  }
+}
+

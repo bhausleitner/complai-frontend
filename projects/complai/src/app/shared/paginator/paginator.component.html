@@ -1,0 +1,48 @@
+<!-- For Large screens -->
+<!-- <div class="d-none d-lg-flex"> -->
+  <div class="d-flex">
+
+    <!-- <span class="mr-2  pt-2 paginator-label">
+      Show
+    </span>
+    <ul class="list-horizontal">
+      <li *ngFor="let item of pageSizesList" class="pr-1">
+        <a mat-flat-button color="primary" [class.selected]="item.selected"> {{item.value}} </a>
+      </li>
+      <li>
+        <a mat-flat-button class="mr-5" color="primary"> All </a>
+      </li>
+    </ul> -->
+
+
+    <span class="mr-2 pt-2 paginator-label">
+      Page
+    </span>
+
+    <ul class="list-horizontal">
+      <li>
+        <a mat-button style="transform: rotate(180deg)" (click)="decrementVisiblePages()">
+          <mat-icon [inline]="true"> play_arrow</mat-icon>
+        </a>
+    </li>
+      <li *ngFor="let page of pages | slice:from:to" class="pr-1 page-button">
+        <a  mat-raised-button color="primary" [class.selected]="page.selected" (click)="pageClick(page.value)"> {{page.value + 1}} </a>
+      </li>
+      <li>
+          <a mat-button (click)="incrementVisiblePages()">
+            <mat-icon [inline]="true"> play_arrow</mat-icon>
+          </a>
+      </li>
+    </ul>
+
+
+  </div>
+
+  <!-- For small and medium size screens -->
+  <!-- <div class="d-lg-none"> -->
+
+    <!-- <complai-select-list class="mr-1" labelText="Number Of Pages" [options]="pageSizeOptions"> </complai-select-list> -->
+     <!-- <complai-select-list labelText="Page selected" [options]="pageNumbersSmall"> </complai-select-list> -->
+
+
+  <!-- </div> -->

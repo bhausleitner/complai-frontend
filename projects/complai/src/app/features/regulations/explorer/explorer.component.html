@@ -1,0 +1,56 @@
+<!-- <div class="explorer-top-bar  mat-elevation-z4"> -->
+
+  <!-- <complai-explorer-filters class="d-none d-md-flex"></complai-explorer-filters> -->
+  <!-- <complai-explorer-filters class="pt-2"></complai-explorer-filters> -->
+
+
+
+<!-- </div> -->
+
+
+<div class="container">
+
+
+  <div class="row d-none d-lg-flex">
+    <div class="mat-headline after-top-bar-div-lg">{{ titleExplorer | translate }}</div>
+  </div>
+
+
+  <div class="row d-none d-md-flex d-lg-none">
+    <div class="mat-headline after-top-bar-div-md">{{ titleExplorer | translate }}</div>
+  </div>
+
+
+  <div class="row d-none d-sm-flex d-md-none">
+    <div class="mat-headline after-top-bar-div-small">{{ titleExplorer | translate }}</div>
+  </div>
+
+  <div class="row d-md-none d-lg-none d-sm-none">
+    <div class="mat-headline after-top-bar-div-xssmall">{{ titleExplorer | translate }}</div>
+  </div>
+
+  <!-- <complai-explorer-filters class="d-none d-md-flex"></complai-explorer-filters> -->
+
+
+  <complai-paginator class="row flex-row-reverse "
+    [pageSizeOptions]="pageSizes"
+    [totalNumOfItems]="(regulations$ | async).length"
+    [pageSize]="pageSize"
+    (currentPageEmitter)="getCurrentPage($event)"> </complai-paginator>
+
+  <!-- <div class="row"> -->
+  <complai-explorer-entry class="row" *ngFor="let regulation of regulations$ | async |  slice:from:to"
+    [regulation]=regulation>
+  </complai-explorer-entry>
+
+  <!-- </div> -->
+
+  <!-- <div class="row"> -->
+
+
+
+
+  <mat-divider></mat-divider>
+
+
+</div>

@@ -1,0 +1,61 @@
+@import '../../../../../styles-variables.scss';
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+td {
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+
+.category {
+  color: #001f54;
+  font-weight: normal;
+  padding-right: 5px;
+
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.value {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: black;
+}
+
+.mat-card-content {
+  padding-left: 15px;
+}
+
+.mat-card-actions {
+  display: flex;
+  // flex-direction: row;
+  float: right;
+}
+
+mat-card {
+  width: 100% !important;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.mat-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.read-more-button {
+  display: flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}

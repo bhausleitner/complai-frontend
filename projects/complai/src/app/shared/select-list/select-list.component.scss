@@ -1,0 +1,61 @@
+.regulations-filter.mat-select-panel {
+  border-radius: 20px;
+}
+
+complai-select-list {
+  mat-label.select-list-label {
+    color: #001f54;
+    // font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    padding-right: 2px;
+    margin-top: 2px;
+  }
+
+  .mat-select-arrow {
+    color: white !important;
+  }
+
+  label.mat-form-field-label.mat-empty.mat-form-field-empty {
+    mat-label {
+      color: white;
+      padding-left: 8px;
+      // font-style: italic;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 19px;
+    }
+    padding-top: 4px;
+  }
+
+  .mat-select-trigger {
+    background: #001f54;
+    border-radius: 30px;
+    height: 30px;
+    padding-top: 4px;
+    // padding-left: 6px;;
+  }
+
+  .mat-select-value-text {
+    color: white;
+    padding-left: 8px;
+    // font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  .mat-select-arrow-wrapper {
+    padding-right: 6px;
+  }
+
+  /* to change plceholder text when focused */
+  .mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-trigger {
+    color: white;
+  }
+
+  .mat-form-field-underline {
+    display: none;
+  }
+}

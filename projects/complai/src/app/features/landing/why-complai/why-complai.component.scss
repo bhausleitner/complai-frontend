@@ -1,0 +1,65 @@
+@import '../../../../styles-variables';
+
+$dark-background: #001f54;
+
+button.mat-flat-button {
+  border-radius: 20px;
+  max-width: 217px;
+  max-height: 43px;
+  width: 100%;
+  margin: 2px;
+  color: white;
+  background: #001f54;
+  align-self: center;
+}
+
+h1,
+h3 {
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 20%;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+.why-complai-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*
+
+@media (max-width: map-get($grid-breakpoints, md)) {
+
+  .why-complai-container {
+    h1 {
+      //line-height: 1em;
+      text-size-adjust: 1em;
+    }
+
+  }
+}
+
+@media (max-width: map-get($grid-breakpoints, sm)) {
+
+  .why-complai-container {
+    h1 {
+      line-height: 1em;
+    }
+  }
+
+}
+ */
+
+.request-demo {
+  margin-top: 100px !important;
+}

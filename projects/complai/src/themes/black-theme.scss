@@ -1,0 +1,9 @@
+$complai-black-primary: mat-palette($mat-grey, 700, 300, 900);
+$complai-black-accent: mat-palette($mat-blue-grey, 400);
+$complai-black-warn: mat-palette($mat-red, 500);
+
+$complai-black-theme: mat-dark-theme(
+  $complai-black-primary,
+  $complai-black-accent,
+  $complai-black-warn
+);

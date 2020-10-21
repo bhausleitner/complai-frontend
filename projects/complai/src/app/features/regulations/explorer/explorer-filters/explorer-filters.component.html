@@ -1,0 +1,38 @@
+<div class="filters-wrapper d-felx">
+
+
+  <complai-select-list-bright [default]="sortBy[0]" [labelText]="titleSort" [options]="sortBy">
+  </complai-select-list-bright>
+
+  <complai-select-list-bright [default]="defaultAppAreas" multiple="true" [labelText]="titleArea"
+    [options]="(explorerFilters$ | async)?.application_areas">
+
+  </complai-select-list-bright>
+<!--
+  <complai-select-list-bright [default]="defaultIndustries" multiple="true" [labelText]="titleIndustry"
+    [options]="(explorerFilters$ | async)?.industries">
+
+  </complai-select-list-bright> -->
+
+  <complai-select-list-bright [default]="sortBy[0]" [labelText]="titleSort" [options]="sortBy">
+  </complai-select-list-bright>
+
+
+  <!-- <complai-select-list-bright multiple="true" [labelText]="titleCommitment"
+    [options]="(explorerFilters$ | async)?.type_of_commitments">
+
+  </complai-select-list-bright> -->
+
+<!--
+  <complai-select-list-bright multiple="true" [labelText]="titleAct"
+    [options]="(explorerFilters$ | async)?.type_of_acts">
+
+  </complai-select-list-bright> -->
+
+  <!-- <mat-form-field style="padding-right: 20px;">
+    <mat-label> {{titleDate | translate}}</mat-label>
+    <input (focus)="picker.open()" (click)="picker.open()" matInput [matDatepicker]="picker">
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field> -->
+
+</div>

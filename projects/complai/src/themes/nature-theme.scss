@@ -1,0 +1,9 @@
+$complai-nature-primary: mat-palette($mat-brown, 700, 300, 900);
+$complai-nature-accent: mat-palette($mat-deep-purple, 300);
+$complai-nature-warn: mat-palette($mat-red, 600);
+
+$complai-nature-theme: mat-light-theme(
+  $complai-nature-primary,
+  $complai-nature-accent,
+  $complai-nature-warn
+);

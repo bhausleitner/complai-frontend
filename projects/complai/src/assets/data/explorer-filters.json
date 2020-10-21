@@ -1,0 +1,20 @@
+{
+  "application_areas": [
+    "EU",
+    "complai.explirer.filter.Germany",
+    "complai.explirer.filter.France",
+    "complai.explirer.filter.UnitedKingdom",
+    "complai.explirer.filter.Italy"
+  ],
+  "industries": [
+    "complai.explirer.filter.Food",
+    "complai.explirer.filter.Pharma",
+    "complai.explirer.filter.Automotive",
+    "complai.explirer.filter.Electrical"
+  ],
+  "type_of_commitments": ["complai.explirer.filter.mandatory", "Optional"],
+  "type_of_acts": [
+    "complai.explirer.filter.Regulation",
+    "complai.explirer.filter.Directive"
+  ]
+}

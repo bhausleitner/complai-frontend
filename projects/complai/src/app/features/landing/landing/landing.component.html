@@ -1,0 +1,9 @@
+<div class="background">
+  <div class="gradient">
+    <div class="container">
+      <div [@routeAnimations]="o.isActivated && o.activatedRoute.routeConfig.path">
+        <router-outlet #o="outlet"></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,119 @@
+@import '~@angular/material/theming';
+
+@mixin complai-landing-component-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  complai-landing {
+    .background {
+      color: mat-color($foreground, text);
+      background-color: mat-color($background, background);
+      height: 100%;
+      /*   .gradient {
+        &::before {
+          background: linear-gradient(
+            to bottom,
+            mat-color($background, background, 0) 0%,
+            mat-color($background, background, 1) 100%
+          );
+        }
+      } */
+    }
+
+    mat-card.registratin-container {
+      color: #001f54;
+      background: #001f54;
+
+      .mat-form-field-outline {
+        color: white;
+
+        &.mat-form-field-outline-thick {
+          color: white;
+        }
+      }
+
+      mat-label {
+        color: white;
+      }
+
+      span {
+        &.mat-placeholder-required.mat-form-field-required-marker {
+          color: white;
+        }
+      }
+
+      input {
+        caret-color: white;
+      }
+
+      &.mat-form-field-outline {
+        color: white;
+        background: #c4c4c4;
+      }
+
+      .mat-form-field-appearance-outline .mat-form-field-infix {
+        color: white;
+      }
+
+      mat-chip-list {
+        input::placeholder {
+          color: white;
+        }
+      }
+    }
+
+    //mat-form-field-outline mat-form-field-outline-thick ng-tns-c14-6 ng-star-inserted
+    //.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid   .mat-form-field-outline-thick {
+    //      color: white;
+    //  }
+
+    mat-card-actions {
+      text-align: center;
+      z-index: 1;
+
+      button,
+      a {
+        border-radius: 20px;
+        max-width: 217px;
+        max-height: 43px;
+        width: 100%;
+        &.mat-button-base {
+          // do not delete please, I want to keep this empty rule
+          //background: #001f54;
+          //color: white;
+        }
+        margin: 2px;
+      }
+    }
+
+    .sign-up-form,
+    .sign-in-form {
+      max-width: 530px;
+      margin: 0 auto 60px auto;
+
+      p {
+        line-height: 40px;
+
+        a {
+          border-bottom: 3px solid;
+        }
+      }
+    }
+
+    // Registration/Login Froms
+    $dark-background: #001f54;
+    .registratin-container {
+      display: flex;
+      flex-direction: column;
+      border-radius: 22px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .registratin-container > * {
+      width: 100%;
+    }
+  }
+}

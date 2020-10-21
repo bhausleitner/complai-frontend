@@ -1,0 +1,9 @@
+$complai-light-primary: mat-palette($mat-grey, 200, 500, 300);
+$complai-light-accent: mat-palette($mat-brown, 200);
+$complai-light-warn: mat-palette($mat-deep-orange, 200);
+
+$complai-light-theme: mat-light-theme(
+  $complai-light-primary,
+  $complai-light-accent,
+  $complai-light-warn
+);

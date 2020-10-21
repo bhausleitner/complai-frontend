@@ -1,0 +1,14 @@
+<mat-form-field *ngIf="multiple">
+  <mat-label class="select-list-label"> {{labelText | translate}} </mat-label>
+  <mat-select multiple [(value)]="selected" panelClass="regulations-filter">
+    <mat-option *ngFor="let option of options" [value]="option"> {{option | translate }}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field *ngIf="!multiple">
+  <mat-label class="select-list-label"> {{labelText | translate }} </mat-label>
+  <mat-select [(value)]="selected" panelClass="regulations-filter">
+    <mat-option>None</mat-option>
+    <mat-option *ngFor="let option of options" [value]="option"> {{option | translate}}</mat-option>
+  </mat-select>
+</mat-form-field>
